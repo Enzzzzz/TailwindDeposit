@@ -2,11 +2,11 @@ import Navbar from "../templates/navbars/navbar"
 
 function Home() {
   return (
-    <div className="bg-primary w-full h-full min-h-screen overflow-hidden">
-      <div className="bg-primary w-full">
+    <div className="home">
+      <div className="bg-blue-gradient w-full">
       <Navbar/>
       </div>
-      <div className="bg-primary w-full h-full">
+      <div className="bg-blue-gradient w-full h-full">
 
       </div>
     </div>
