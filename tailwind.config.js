@@ -9,18 +9,30 @@ export default {
       center: true,
       padding: "2rem",
     },
+    fontSize: {
+      xs: ['12px', '16px'],
+      sm: ['14px', '20px'],
+      base: ['16px', '19.5px'],
+      lg: ['18px', '21.94px'],
+      '1xl': ['20px', '24.38px'],
+      '2xl': ['24px', '29.26px'],
+      '3xl': ['28px', '50px'],
+      '4xl': ['48px', '58px'],
+      '8xl': ['96px', '106px'],
+    },
     extend: {
       colors: {
         primary: "#131613",
-        secondary: "#FFFFFF",
+        secondary: "#4a92ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        felix: [ "Felix Titling"]
       },
       boxShadow: {
-        neonMain: "0 0 5px #00F, 0 0 20px #00B"
+        neonMain: "0 0 5px #011F4B, 0 0 20px #023e96"
       },
     },
     screens: {

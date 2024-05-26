@@ -4,6 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .home {
+    @apply bg-blue-gradient w-full h-full min-h-screen overflow-hidden
+  }
+
+  .navbutton {
+    @apply rounded-md text-lg cursor-pointer sub font-medium hover:text-secondary text-primary py-2 px-4
+  }
+}
+
+
 @font-face {
   font-family: 'Felix Titling';
   src: url('/fonts/Felixti.TTF') format('truetype');
@@ -15,9 +26,9 @@
 }
 
 .icon {
-  width: 20px; /* Ajuste o tamanho conforme necessário */
+  width: 20px;
   height: auto;
-  margin-right: 7px; /* Ajuste o espaçamento conforme necessário */
+  margin-right: 7px;
 }
 
 :root {
@@ -37,12 +48,12 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
+    #c3dbff 0.89%,
+    #84b4fc 17.23%,
+    #5997f5 42.04%,
+    #377de7 55.12%,
+    #1557bb 71.54%,
+    #011F4B 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,12 +64,12 @@
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
+    #c3dbff -43.27%,
+    #84b4fc -21.24%,
+    #5997f5 12.19%,
+    #377de7 29.82%,
+    #1557bb 51.94%,
+    #011F4B 90.29%
   );
 }
 
@@ -112,28 +123,13 @@
   }
 }
 
-.text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #806747 0.89%,
-    #b88e58 17.23%,
-    #c99b5f 42.04%,
-    #dbad4f 55.12%,
-    #c4a567 71.54%,
-    #cfb889 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
 
 .sub {
   background-image: linear-gradient(
     transparent 0%,
     transparent 90%,
-    #d7c091 90%,
-    #796041 100%
+    #023e96 90%,
+    #011F4B 100%
   );
   background-repeat: no-repeat;
   background-size: 0% 100%;
