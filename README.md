@@ -1,6 +1,7 @@
 Welcome to **TailwindDeposit**, a repository dedicated to my personal journey of learning Tailwind CSS and modern web development tools. While this is primarily for my own study, everyone is welcome to contribute and use the content.
 
-![Tailwind CSS Logo](/Tailwind_CSS_Logo.png)
+![Tailwind CSS Logo](/public/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg)
+
 
 ---
 
