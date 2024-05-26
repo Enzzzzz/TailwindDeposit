@@ -10,7 +10,7 @@ const items = [
     {
       header: "China",
       image: china,
-      text: `Shangai`,
+      text: `Shanghai`,
     },
   {
     header: "Russia",
