@@ -7,6 +7,11 @@ import africa from "/paralaxCards/serengeti.jpeg";
 import japan from "/paralaxCards/tokyo.jpg";
 
 const items = [
+    {
+      header: "China",
+      image: china,
+      text: `Shangai`,
+    },
   {
     header: "Russia",
     image: russia,
@@ -28,11 +33,6 @@ const items = [
     header: "Japan",
     image: japan,
     text: `Seoul`,
-  },
-  {
-    header: "China",
-    image: china,
-    text: `Shangai`,
   },
 ];
 
