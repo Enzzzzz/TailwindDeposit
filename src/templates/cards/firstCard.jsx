@@ -32,7 +32,7 @@ const items = [
   {
     header: "Japan",
     image: japan,
-    text: `Seoul`,
+    text: `Tokyo`,
   },
 ];
 
