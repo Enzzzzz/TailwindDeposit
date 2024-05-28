@@ -43,11 +43,7 @@ export const FirstCard = () => {
 
   return (
     <>
-      <div
-        className="image-accordion-background"
-        style={{ backgroundImage: `url(${items[active].image})` }}
-      ></div>
-      <div className="image-accordion">
+      <div className="flex gap-1 sm:gap-3 md:gap-6 lg:gap-14 cursor-pointer font-poppins relative z-[2]">
         {items.map((item, index) => {
           const isActive = active === index ? "active" : "";
           return (
@@ -60,8 +56,8 @@ export const FirstCard = () => {
               <div className="content">
             
                 <div>
-                  <h2>{item.header}</h2>
-                  <p>{item.text}</p>
+                  <h2 className="text-[18px] sm:text-[24px] m-0 text-white/95 ">{item.header}</h2>
+                  <p className="text-[18px] sm:text-[24px] m-0 text-gray-300/65">{item.text}</p>
                 </div>
               </div>
             </div>

@@ -1,28 +1,4 @@
-.image-accordion-background {
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px);
-    transition: 0.3s;
-  }
-  
-  .image-accordion-background::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgb(0 0 0 / 88%);
-  }
-  
-  .image-accordion {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    gap: 16px;
-    cursor: pointer;
-    font-family: "Euclid Circular A", "Poppins";
-  }
-  
+
   .image-accordion-item {
     position: relative;
     overflow: hidden;
@@ -34,31 +10,28 @@
     opacity: 0.5;
     transition: 0.5s;
     object-fit: cover;
+
   }
+
+  
 
   .image-accordion-item img{
     width: 100px;
     height: 500px;
     object-fit: cover;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    filter: grayscale(0.6);
   }
   
   .image-accordion-item:hover {
     opacity: 0.75;
   }
   
-  .image-accordion :is(h2, p) {
-    margin: 0;
-  }
-  
-  .image-accordion-item h2 {
-    font-size: 24px;
-    font-weight: 400;
-    color: rgb(255 255 255 / 96%);
-  }
-  
-  .image-accordion-item p {
-    color: rgb(255 255 255 / 66%);
-  }
   
   .image-accordion-item.active {
     width: 800px;
@@ -101,13 +74,21 @@
     opacity: 1;
     visibility: visible;
   }
-  
-  .image-accordion-item img {
-    position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    height: 150%;
-    filter: grayscale(0.6);
+
+
+  @media screen and (max-width: 480px) {
+    .image-accordion-item {
+      width: 45px;
+      height: 300px;
+    }  
+
+    .image-accordion-item img{
+      width: 45px;
+      height: 300px;
+    }  
+
+    .image-accordion-item.active {
+      width: 180px;
+      opacity: 1;
+    }
   }
