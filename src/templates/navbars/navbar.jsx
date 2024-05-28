@@ -1,8 +1,8 @@
 
 function Navbar() {
   return (
-    <div className="fixed top-0 w-full z-50 bg-gray-300 border-b border-primary">
-      <div className="bg-gray-300 flex flex-wrap items-center justify-between md:mx-[10%] p-3">
+    <div className="fixed top-0 md:mt-7 w-full z-50 sm:bg-gray-200 md:bg-transparent ">
+      <div className="bg-gray-200 md:rounded-full shadow-2xl flex flex-wrap items-center border-b border-primary justify-between md:mx-[10%] p-3">
         <a href="/" className="flex items-center md:space-x-3 rtl:space-x-reverse">
           <img src="/logo.png" alt="logo" className="size-8 md:size-12" />
           <span className="self-center text-sm md:text-2xl text-gradient font-semibold text-sky-800">
@@ -10,7 +10,7 @@ function Navbar() {
           </span>
         </a>
 
-        <div className=" w-[50%] md:w-[30%] cursor-pointer flex flex-how items-center justify-between px-5 bg-gray-200 hover:bg-gray-300 duration-300 rounded-lg h-10 neon-blue">
+        <div className=" w-[50%] md:w-[30%] cursor-pointer flex flex-how items-center justify-between px-5 bg-white hover:bg-gray-100 duration-300 rounded-lg h-10 neon-blue">
           <h1 className="transform animate-pulse duration-200 text-lg font-bold text-secondary">
             AVISO
           </h1>
