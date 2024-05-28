@@ -43,7 +43,7 @@ export const FirstCard = () => {
 
   return (
     <>
-      <div className="flex gap-1 sm:gap-3 md:gap-6 lg:gap-14 cursor-pointer font-poppins relative z-[2]">
+      <div className="flex gap-1 ss:gap-2 sm:gap-3 md:gap-4 lg:gap-4 cursor-pointer font-poppins relative z-[2]">
         {items.map((item, index) => {
           const isActive = active === index ? "active" : "";
           return (
@@ -53,11 +53,11 @@ export const FirstCard = () => {
               onClick={() => handleToggle(index)}
             >
               <img src={item.image} />
-              <div className="content">
+              <div className="content bg-gradient-to-b from-transparent to-black/80 items-center flex ">
             
                 <div>
-                  <h2 className="text-[18px] sm:text-[24px] m-0 text-white/95 ">{item.header}</h2>
-                  <p className="text-[18px] sm:text-[24px] m-0 text-gray-300/65">{item.text}</p>
+                  <h2 className="text-[18px] xs:text-[20px] ss:text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] xxl:text-[36px] m-0 text-white/95 ">{item.header}</h2>
+                  <p className="text-[18px] xs:text-[20px] ss:text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[30px] xxl:text-[36px] m-0 text-gray-300/65">{item.text}</p>
                 </div>
               </div>
             </div>
